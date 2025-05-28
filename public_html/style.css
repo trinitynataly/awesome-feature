@@ -1,0 +1,123 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  background: url('assets/images/home.jpg') no-repeat center center / cover;
+  height: 400px;
+  color: white;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero > .container {
+  position: relative;
+  z-index: 2;
+}
+
+.herosub {
+  position: relative;
+  background: url('assets/images/submissions.jpg') no-repeat center center / cover;
+  height: 400px;
+  color: white;
+  overflow: hidden;
+}
+
+.herosub::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.herosub .hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Yellow Button – used globally */
+.btn-submit-form,
+.btn-yellow {
+  font-weight: 500;
+  background-color: #ffa600;
+  border: none;
+  padding: 12px 50px;
+  color: white !important;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-submit-form:hover,
+.btn-submit-form:focus-visible,
+.btn-submit-form:active,
+.btn-yellow:hover,
+.btn-yellow:focus-visible,
+.btn-yellow:active {
+  background-color: #ff8c00 !important;
+  color: white !important;
+}
+
+/* Container Width */
+.custom-container {
+  max-width: 1000px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Text and Headings */
+.lead {
+  font-size: 1.8rem;
+}
+
+.headline {
+  color: rgb(0, 53, 159);
+}
+
+::placeholder {
+  color: #aaa !important;
+  font-style: italic;
+  opacity: 1;
+}
+
+/* Form Validation */
+input.is-invalid,
+textarea.is-invalid {
+  border-color: #dc3545 !important;
+  padding-right: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 1rem 1rem;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23dc3545' viewBox='0 0 16 16'%3e%3cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0-1A6 6 0 1 0 8 2a6 6 0 0 0 0 12z'/%3e%3cpath d='M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zm.1-6.995a.905.905 0 0 1 1.8 0l-.35 4.5a.55.55 0 0 1-1.1 0l-.35-4.5z'/%3e%3c/svg%3e");
+}
+
+form .alert {
+  margin-bottom: 1rem;
+}
+
+/* Navigation */
+.nav-link {
+  color: white !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+/* Submission Cards */
+.card-body strong {
+  color: #444;
+}
